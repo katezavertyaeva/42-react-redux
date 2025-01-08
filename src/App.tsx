@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom"
+import Consultation08 from "./consultations/Consultation08/Consultation08"
 
 //lessons
 
@@ -8,7 +9,7 @@ import { BrowserRouter } from "react-router-dom"
 const App = () => {
   return (
     <BrowserRouter>
-      Hello redux
+      <Consultation08 />
     </BrowserRouter>
   )
 }
