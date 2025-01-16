@@ -33,3 +33,9 @@ export const JokeText = styled.div`
  font-weight: bold;
  color: rebeccapurple;
 `
+
+export const JokeWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+`
