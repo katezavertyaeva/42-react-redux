@@ -5,11 +5,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 //lessons
 // import Lesson16 from "./lessons/Lesson16/Lesson16"
-import Lesson17 from "./lessons/Lesson17/Lesson17"
-import Home from "./pages/CustomerApp/Home/Home"
-import CustomerProfile from "./pages/CustomerApp/CustomerProfile/CustomerProfile"
-import Layout from "./pages/CustomerApp/Layout/Layout"
-import FeedbackForm from "./components/FeedbackForm/FeedbackForm"
+// import Lesson17 from "./lessons/Lesson17/Lesson17"
+// import Home from "./pages/CustomerApp/Home/Home"
+// import CustomerProfile from "./pages/CustomerApp/CustomerProfile/CustomerProfile"
+// import Layout from "./pages/CustomerApp/Layout/Layout"
+import Lesson18 from "./lessons/Lesson18/Lesson18"
 
 //homeworks
 // import Homework16 from "./homeworks/Homework16/Homework16"
@@ -33,7 +33,7 @@ const App = () => {
         </Routes>
       </Layout> */}
       {/* <Homework16 /> */}
-      <Lesson17/>
+      {/* <Lesson17/> */}
       {/* Consult9 */}
       {/* <Layout>
         <Routes>
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/profile" element={<CustomerProfile />} />
         </Routes>
       </Layout> */}
-      {/* <FeedbackForm /> */}
+      <Lesson18 />
     </BrowserRouter>
   )
 }

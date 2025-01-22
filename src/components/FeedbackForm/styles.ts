@@ -10,3 +10,6 @@ export const FeedbackFormContainer = styled.form`
   border: 2px solid;
   border-radius: 4px;
 `
+export const Message = styled.div`
+color: green;
+`
