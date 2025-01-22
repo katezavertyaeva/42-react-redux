@@ -9,14 +9,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import Home from "./pages/CustomerApp/Home/Home"
 // import CustomerProfile from "./pages/CustomerApp/CustomerProfile/CustomerProfile"
 // import Layout from "./pages/CustomerApp/Layout/Layout"
-import Lesson18 from "./lessons/Lesson18/Lesson18"
+// import Lesson18 from "./lessons/Lesson18/Lesson18"
 
 //homeworks
 // import Homework16 from "./homeworks/Homework16/Homework16"
 
 //consultations
 // import Consultation08 from "./consultations/Consultation08/Consultation08"
-
+import Consultation10 from "consultations/Consultation10/Consultation10"
 
 
 const App = () => {
@@ -41,7 +41,8 @@ const App = () => {
           <Route path="/profile" element={<CustomerProfile />} />
         </Routes>
       </Layout> */}
-      <Lesson18 />
+      {/* <Lesson18 /> */}
+      <Consultation10/>
     </BrowserRouter>
   )
 }
