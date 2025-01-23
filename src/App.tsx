@@ -1,4 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+
+import { authSliceSelectors } from "store/redux/auth/authSlice";
+import { useAppSelector } from "store/hooks";
+
+// import { authSliceSelectors } from ;
+
+
 // import Layout from "./pages/UsersApp/Layout/Layout"
 // import Home from "./pages/UsersApp/Home/Home"
 // import Users from "./pages/UsersApp/Users/Users"
@@ -10,6 +17,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import CustomerProfile from "./pages/CustomerApp/CustomerProfile/CustomerProfile"
 // import Layout from "./pages/CustomerApp/Layout/Layout"
 // import Lesson18 from "./lessons/Lesson18/Lesson18"
+// import Lesson20 from "lessons/Lesson20/Lesson20";
+import Dashboard from "components/Dashboard/Dashboard";
+import Login from "components/Login/Login";
+
 
 //homeworks
 // import Homework16 from "./homeworks/Homework16/Homework16"
@@ -20,6 +31,8 @@ import Consultation10 from "consultations/Consultation10/Consultation10"
 
 
 const App = () => {
+  const { isAuthenticated } = useAppSelector(authSliceSelectors.stateData);
+
   return (
     <BrowserRouter>
       {/* <Consultation08 /> */}
@@ -42,7 +55,9 @@ const App = () => {
         </Routes>
       </Layout> */}
       {/* <Lesson18 /> */}
-      <Consultation10/>
+      {/* <Consultation10/> */}
+      {isAuthenticated ? <Dashboard /> : <Login />};
+      {/* <Lesson20 /> */}
     </BrowserRouter>
   )
 }

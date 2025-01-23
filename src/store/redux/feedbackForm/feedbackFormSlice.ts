@@ -25,7 +25,7 @@ export const feedbackFormSlice = createAppSlice({
           )
           return result.data
         } catch (error) {
-          thunkApi.rejectWithValue(error)
+          return thunkApi.rejectWithValue(error)
         }
       },
 

@@ -33,7 +33,7 @@ export const randomJokesSlice = createAppSlice({
           return result.data
         } catch (error) {
           //4. В случае ошибки, отправляем её в обработчик rejected c помощью метода rejectWithValue из thunkApi
-          thunkApi.rejectWithValue(error)
+          return thunkApi.rejectWithValue(error)
         }
       },
       {
